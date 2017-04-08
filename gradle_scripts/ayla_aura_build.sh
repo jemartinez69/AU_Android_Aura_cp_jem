@@ -17,17 +17,8 @@ AYLA_SDK_BRANCH=${AYLA_SDK_BRANCH:-release/5.5.00} #brian/localdevice} # or: -$A
 AYLA_REMOTE=${AYLA_REMOTE:-origin}
 AYLA_SDK_REPO=${AYLA_SDK_REPO:-} # or: -https://github.com/AylaNetworks/Android_AylaSDK(_Public).git
 AYLA_LD_SDK_REPO=${AYLA_LD_SDK_REPO:-} # or: -https://github.com/AylaNetworks/Android_AylaSDK(_Public).git
-AYLA_PUBLIC=${AYLA_PUBLIC:-}
+AYLA_PUBLIC=${AYLA_PUBLIC:-_Public}
 
-cur_path=`pwd`
-parent_path=`dirname "$cur_path"`
-public_repo_path_pattern=".*_Public$"
-if [[ $parent_path =~ $public_repo_path_pattern ]]; then
-    AYLA_PUBLIC=${AYLA_PUBLIC:-_Public}
-else
-    # internal developers default
-    AYLA_PUBLIC=${AYLA_PUBLIC:-}
-fi
 [ "X$AYLA_PUBLIC" == "X" ] && repo_type="internal" || repo_type="public"
 #AYLA_SDK_REPO=${AYLA_SDK_REPO:-https://github.com/AylaNetworks/Android_AylaSDK${AYLA_PUBLIC}.git}
 AYLA_SDK_REPO=${AYLA_SDK_REPO:-git@github.com:AylaNetworks/Android_AylaSDK${AYLA_PUBLIC}.git}
