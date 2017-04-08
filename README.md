@@ -1,12 +1,14 @@
-Aura
+Ayla University Android programming assignment - Android Aura Public base
 ====
-Ayla Engineering Demo Application
+Ayla University Android programming assignment repository for jmartinez@cardinalpeak.com. Using Android Aura public as a starting base
 
 Build project using Android Studio 2.3+
 ======================================
-$git clone https://github.com/AylaNetworks/Android_Aura_Public.git  
+$git clone git@github.com:jemartinez69/AU_Android_Aura_cp_jem.git
+	or 
+$git clone https://github.com/jemartinez69/AU_Android_Aura_cp_jem.git
 
-$cd Android_Aura_Public/gradle_scripts  
+$cd AU_Android_Aura_cp_jem/gradle_scripts  
 Optionally set environment variables AYLA_BUILD_BRANCH to the branch to be built (default to your current branch), and AYLA_SDK_BRANCH to the Ayla SDK branch. Only change these if you are doing custom development.
 
 $../gradlew -q execTasks  
