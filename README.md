@@ -5,7 +5,7 @@ Ayla University Android programming assignment repository for jmartinez@cardinal
 Build project using Android Studio 2.3+
 ======================================
 $git clone git@github.com:jemartinez69/AU_Android_Aura_cp_jem.git  
-   or 
+	or  
 $git clone https://github.com/jemartinez69/AU_Android_Aura_cp_jem.git  
 
 $cd AU_Android_Aura_cp_jem/gradle_scripts  
